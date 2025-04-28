@@ -1,6 +1,6 @@
-# Javascript - Asincronismo
+# Javascript -  Quiz
 
-En este repositorio se encuentra el trabajo de Javascript - Asincronismo relizado por la estudiante Maria Juliana Savedra Mejia en JavaScript.
+En este repositorio se encuentra el trabajo de Javascript - Quiz relizado por la estudiante Maria Juliana Savedra Mejia en JavaScript.
 
 
 | Modulo | Contenido |

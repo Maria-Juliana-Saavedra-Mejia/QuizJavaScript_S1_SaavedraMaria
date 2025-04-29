@@ -16,7 +16,10 @@ function partesuperior(){
                 <img class="Image1" src="${response.current.condition.icon}"/>
                 <p class="temperature">${response.current.temp_c} º</p>
                 <p class="temperatureSensation">Feels like ${response.current.feelslike_c} º</p>
-                
+                <p class="windspeed">${response.current.wind_kph}m/h</p>
+                <p class="RainChance">${response.current.dewpoint_c}%</p>
+                <p class="Presuress">${response.current.pressure_mb} hpa</p>
+                <p class="UVIndex">${response.current.uv} º</p>
             `;
             console.log(response.location.name);
         }
@@ -25,3 +28,28 @@ function partesuperior(){
 }
 
 partesuperior();
+
+function partetabla(){
+    let ciudad = "Floridablanca";
+    let codigo = "ddd71d032c0b41bdabd115758252804";
+    let info = `http://api.weatherapi.com/v1/current.json?key=${codigo}&q=${ciudad}`;
+    let clima = new XMLHttpRequest();
+    const imagenes = document.getElementById("Seccion1__Cuadricula--api");
+    
+    clima.open("GET", info, true);
+    clima.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200) {
+            let response = JSON.parse(this.responseText);  
+            imagenes.innerHTML = `
+                <p class="windspeed">${response.current.wind_kph}m/h</p>
+                <p class="RainChance">${response.current.dewpoint_c}%</p>
+                <p class="Presuress">${response.current.pressure_mb} hpa</p>
+                <p class="UVIndex">${response.current.uv}</p>
+            `;
+            console.log(response.location.name);
+        }
+    }
+    clima.send();
+}
+
+partetabla();

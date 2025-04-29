@@ -277,9 +277,9 @@ body{
 .KindOfWeather{
     position: absolute;
     font-family: 'regular';
-    top:45vw;
+    top:48vw;
     color: white;
-    left:60vw;
+    left:73vw;
     font-size: 4vw;
     text-align: center;
 }
@@ -295,7 +295,7 @@ body{
     position: absolute;
     top:25vw;
     color: white;
-    left: 55vw;
+    left: 70vw;
     width: 28vw;
 }
 .temperature{
@@ -313,6 +313,38 @@ body{
     font-family: 'regular';
     top:40vw;
     color: white;
-    left:30vw;
+    left:40vw;
+    font-size: 3.5vw;
+}
+.windspeed{
+    position: absolute;
+    font-family: 'regular';
+    top:115vw;
+    color: black;
+    left:18vw;
+    font-size: 3.5vw;
+}
+.RainChance{
+    position: absolute;
+    font-family: 'regular';
+    top:115vw;
+    color: black;
+    left:72vw;
+    font-size: 3.5vw;
+}
+.Presuress{
+    position: absolute;
+    font-family: 'regular';
+    top:135vw;
+    color: black;
+    left:18vw;
+    font-size: 3.5vw;
+}
+.UVIndex{
+    position: absolute;
+    font-family: 'regular';
+    top:135vw;
+    color: black;
+    left:74vw;
     font-size: 3.5vw;
 }

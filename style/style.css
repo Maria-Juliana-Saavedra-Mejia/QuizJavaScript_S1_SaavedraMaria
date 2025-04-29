@@ -348,3 +348,19 @@ body{
     left:74vw;
     font-size: 3.5vw;
 }
+.sunset{
+    position: absolute;
+    font-family: 'regular';
+    top:135vw;
+    color: black;
+    left:18vw;
+    font-size: 3.5vw;
+}
+.sunrise{
+    position: absolute;
+    font-family: 'regular';
+    top:135vw;
+    color: black;
+    left:74vw;
+    font-size: 3.5vw; 
+}

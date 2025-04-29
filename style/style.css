@@ -265,3 +265,54 @@ body{
     height: 1vw;
     width: 5vw;
 }
+
+.location{
+    position: absolute;
+    font-family: 'regular';
+    top:4vw;
+    color: white;
+    left:3vw;
+    font-size: 4vw;
+}
+.KindOfWeather{
+    position: absolute;
+    font-family: 'regular';
+    top:45vw;
+    color: white;
+    left:60vw;
+    font-size: 4vw;
+    text-align: center;
+}
+.date{
+    position: absolute;
+    font-family: 'regular';
+    top:70vw;
+    color: white;
+    left:3vw;
+    font-size: 4vw;
+}
+.Image1{
+    position: absolute;
+    top:25vw;
+    color: white;
+    left: 55vw;
+    width: 28vw;
+}
+.temperature{
+    position: absolute;
+    font-family: 'bold';
+    top:15vw;
+    color: white;
+    left: 7vw;
+    width: 28vw;
+    font-size: 15vw;
+    width:40vw;
+}
+.temperatureSensation{
+    position: absolute;
+    font-family: 'regular';
+    top:40vw;
+    color: white;
+    left:30vw;
+    font-size: 3.5vw;
+}

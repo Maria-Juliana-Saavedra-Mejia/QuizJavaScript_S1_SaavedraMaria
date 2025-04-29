@@ -67,8 +67,8 @@ function sun(){
         if (this.readyState === 4 && this.status === 200) {
             let response = JSON.parse(this.responseText);  
             imagenes.innerHTML = `
-                <p class="sunset">${responseforecast.forecastday[0].astro.sunset}</p>
-                <p class="sunrise">${responseforecast.forecastday[0].astro.sunrise}</p>
+                <p class="sunset">${response.forecast.forecastday[0].astro.sunset}</p>
+                <p class="sunrise">${response.forecast.forecastday[0].astro.sunrise}</p>
                 <p class="hoursrise">${response.current.pressure_mb} hpa</p>
                 <p class="hoursset">${response.current.uv}</p>
             `;
